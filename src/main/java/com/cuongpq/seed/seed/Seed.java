@@ -144,7 +144,7 @@ public class Seed {
         }).start();
     }
 
-    @Scheduled(cron = "0 10 7 ? * *")
+    @Scheduled(cron = "0 15 7 ? * *")
     @EventListener(ApplicationReadyEvent.class)
     public void claimDaily() {
         new Thread(() -> {
